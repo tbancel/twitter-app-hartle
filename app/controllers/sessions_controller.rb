@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       sign_in user
       #sign_in function does not exist yet, it is very tricky
-      redirect_to user
+      redirect_back_or user
     else
       flash.now[:error]='Invalid email/password combination' #Not quite right!
       render 'new'
