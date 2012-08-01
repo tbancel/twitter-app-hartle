@@ -1,3 +1,20 @@
+<% if signed_in?%>
+<div class="row">
+	<aside class="span4">
+		<section>
+			<%= render 'shared/user_info'%>
+		</section>
+		<section>
+			<%= render 'shared/micropost_form'%>
+		</section>
+	</aside>
+	<div class="span8">
+		<h3>Micropost Feed</h3>
+		<%= render 'shared/feed'%>
+	</div>
+</div>	
+
+<% else%>
 <div class="center hero-unit">
 	<h1>Welcome to the Sample App</h1>
 
@@ -6,11 +23,11 @@
 		<a href="http://www.youtube.com/watch?v=-aBJxYxo1HU">Surf lessons app</a>.
 	</h2>
 
-	<% if !signed_in?%>
 	<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
-	<% end %>
+</div>
+<div class="center">
+<%= link_to image_tag("kelly_slater.jpg", alt: "Kelly Slater"), 
+'http://en.wikipedia.org/wiki/Kelly_Slater' %>
 </div>
 
-<div class="center">
-<%= link_to image_tag("kelly_slater.jpg", alt: "Kelly Slater"), 'http://en.wikipedia.org/wiki/Kelly_Slater' %>
-</div>
+<% end %>

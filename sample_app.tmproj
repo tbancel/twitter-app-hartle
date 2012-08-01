@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>app/views/static_pages/home.html.erb</string>
+	<string>app/models/user.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -18,87 +18,59 @@
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>200</integer>
+	<integer>248</integer>
 	<key>metaData</key>
 	<dict>
-		<key>Gemfile</key>
+		<key>app/controllers/users_controller.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>32</integer>
+				<integer>27</integer>
 				<key>line</key>
-				<integer>40</integer>
+				<integer>3</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>8</integer>
-		</dict>
-		<key>app/controllers/sessions_controller.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>5</integer>
-				<key>line</key>
-				<integer>19</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>17</integer>
 		</dict>
 		<key>app/helpers/sessions_helper.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>35</integer>
+				<integer>5</integer>
 				<key>line</key>
-				<integer>8</integer>
+				<integer>34</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>1</integer>
+		</dict>
+		<key>app/models/user.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>27</integer>
+				<key>line</key>
+				<integer>26</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>app/views/layouts/_header.html.erb</key>
+		<key>app/views/users/_user.html.erb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>30</integer>
+				<integer>15</integer>
 				<key>line</key>
-				<integer>17</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>app/views/static_pages/home.html.erb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>8</integer>
-				<key>line</key>
-				<integer>8</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>config/cucumber.yml</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
+				<integer>4</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -119,14 +91,14 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>features/step_definitions/authentication_steps.rb</key>
+		<key>lib/tasks/sample_data.rake</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>4</integer>
 				<key>line</key>
-				<integer>30</integer>
+				<integer>7</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -175,14 +147,14 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>spec/helpers/application_helper_spec.rb</key>
+		<key>spec/factories.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>11</integer>
 				<key>line</key>
-				<integer>0</integer>
+				<integer>8</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -194,23 +166,23 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>5</integer>
+				<integer>24</integer>
 				<key>line</key>
-				<integer>31</integer>
+				<integer>32</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>15</integer>
+			<integer>11</integer>
 		</dict>
 		<key>spec/requests/authentication_pages_spec.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>32</integer>
+				<integer>55</integer>
 				<key>line</key>
-				<integer>7</integer>
+				<integer>106</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -222,49 +194,32 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>9</integer>
+				<integer>36</integer>
 				<key>line</key>
-				<integer>44</integer>
+				<integer>42</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>22</integer>
-		</dict>
-		<key>spec/support/utilities.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>14</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>20</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
 		<string>config/routes.rb</string>
-		<string>spec/requests/authentication_pages_spec.rb</string>
-		<string>app/controllers/sessions_controller.rb</string>
-		<string>config/cucumber.yml</string>
-		<string>app/helpers/sessions_helper.rb</string>
-		<string>Gemfile</string>
-		<string>features/step_definitions/authentication_steps.rb</string>
-		<string>app/views/static_pages/home.html.erb</string>
-		<string>app/views/layouts/_header.html.erb</string>
-		<string>spec/helpers/application_helper_spec.rb</string>
-		<string>spec/support/utilities.rb</string>
-		<string>spec/requests/user_pages_spec.rb</string>
+		<string>app/controllers/users_controller.rb</string>
+		<string>app/models/user.rb</string>
 		<string>spec/models/user_spec.rb</string>
+		<string>spec/factories.rb</string>
+		<string>spec/requests/user_pages_spec.rb</string>
+		<string>lib/tasks/sample_data.rake</string>
+		<string>app/helpers/sessions_helper.rb</string>
+		<string>app/views/users/_user.html.erb</string>
+		<string>spec/requests/authentication_pages_spec.rb</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{108, 88}, {860, 690}}</string>
+	<string>{{136, 91}, {860, 687}}</string>
 </dict>
 </plist>
