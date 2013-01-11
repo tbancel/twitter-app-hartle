@@ -14,6 +14,7 @@ FactoryGirl.define do
     #password_confirmation "Helloworld"
   end
   
+  #relation entre base de données, retravailler pour les tests
   factory :micropost do
     content "Lorem Ipsum"
     user

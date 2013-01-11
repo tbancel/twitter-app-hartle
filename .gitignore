@@ -21,3 +21,4 @@ doc/
 .project
 .DS_Store
 bundler_stubs/
+sample_app.tmproj
