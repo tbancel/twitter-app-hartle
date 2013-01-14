@@ -10,4 +10,10 @@ module ApplicationHelper
     end
   end
   
+  def add_exception_to_exception_log(exception)
+    File.open('log/exception.log', 'w') do |f|
+      f << exception.to_s
+    end
+  end
+  
 end
