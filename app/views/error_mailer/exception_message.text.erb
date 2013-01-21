@@ -1,3 +1,10 @@
 Hello Thomas,
 
-<%= @exception.inspect %>
+A <%= @exception.class %> occurred in <%= @controller.controller_name %>#<%= @controller.action_name %>:
+
+<%= raw @exception.message %>
+<%= raw @backtrace.first %>
+
+
+Take care of that shit asap, thanks,
+Thom

@@ -1,3 +1,5 @@
 Airbrake.configure do |config|
-  config.api_key = '51165ce0d29410d34d1542affd2d4e06'
+  config.api_key = ENV['AIRBRAKE_API_KEY']
+  
+  # config.logger=Logger.new("/log/exception.log")
 end

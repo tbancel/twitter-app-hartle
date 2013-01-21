@@ -10,10 +10,14 @@ module ApplicationHelper
     end
   end
   
-  def add_exception_to_exception_log(exception)
-    File.open('log/exception.log', 'w') do |f|
-      f << exception.to_s
+  def log_exception(time, env, request, controller, exception, backtrace)
+    File.open('log/exception.log', 'a+') do |f|
+      f << "\n"
+      f << "At #{time.inspect}\n"
+      f << "A #{exception.class.inspect} occured in #{controller.controller_name.inspect}##{controller.action_name.inspect}\n"
+      f << "#{backtrace.first.inspect}\n"
+      f << "#{exception.message.inspect}\n"
+      f << "\n"
     end
   end
-  
 end
