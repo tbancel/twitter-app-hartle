@@ -54,6 +54,23 @@ class User < ActiveRecord::Base
   def unfollow!(other_user)
     relationships.find_by_followed_id(other_user.id).destroy
   end
+
+  def self.find_or_create_with_ebay(omniauth_hash)
+    name = omniauth_hash['info']['full_name']
+    email = omniauth_hash['info']['email']
+    uuid = omniauth_hash['uid']
+
+    user = User.find_by_email(email)
+    return user unless user.nil?
+
+    user = User.create! do |user|
+      user.name = name
+      user.email = email
+      user.password = uuid
+      user.password_confirmation = uuid
+    end
+    user
+  end
   
   private
   def create_remember_token

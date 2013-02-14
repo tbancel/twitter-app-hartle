@@ -1,8 +1,16 @@
 class SessionsController < ApplicationController
+
   def new
   end
-  
+
   def create
+    # omniauth case
+    if params[:provider] == "ebay"
+      user = User.find_or_create_with_ebay(request.env["omniauth.auth"])
+      sign_in user
+      redirect_to(root_path) and return
+    end
+
     user = User.find_by_email(params[:session][:email])
     if user && user.authenticate(params[:session][:password])
       sign_in user
