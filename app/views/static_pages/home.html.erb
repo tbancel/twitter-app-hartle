@@ -29,8 +29,28 @@
 	<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
 </div>
 <div class="center">
-<%= link_to image_tag("kelly_slater.jpg", alt: "Kelly Slater"), 
-'http://en.wikipedia.org/wiki/Kelly_Slater' %>
+  <div class="tabs_fade">
+    <div class="tabs_view">
+      <div class="tab_fade">
+        <%= link_to image_tag("kelly_slater.jpg", alt: "Kelly Slater"), 
+          'http://en.wikipedia.org/wiki/Kelly_Slater' %>
+      </div>
+      <div class="tab_fade">
+        <%= link_to image_tag("kelly_slater2.jpg", alt: "Kelly Slater"), 
+          'http://upload.wikimedia.org/wikipedia/commons/1/1b/KellySlater_byRobKeaton.jpg' %>
+      </div>
+      <div class="tab_fade">
+        <%= link_to image_tag("kelly_slater3.jpg", alt: "Kelly Slater?"), 
+          'http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2010/9/20/1284978763835/Surfer-dog-Deagan-rides-a-021.jpg' %>
+      </div>
+    </div>
+    <div class="tabs_fade_footer">
+      <div class="tab_button first">test</div>
+      <div class="tab_button second">test</div>
+      <div class="tab_button third">test</div>
+      <div class="tab_cursor"><%= image_tag("surfer-icon.jpg") %></div>
+    </div>
+  </div>
 </div>
 
 <% end %>

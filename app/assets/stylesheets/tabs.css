@@ -1,0 +1,52 @@
+.tabs_fade {
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+.tabs_fade .tab_fade {
+  display: none;
+}
+
+.tabs_fade .tab_fade:first-child {
+  display: inline;
+}
+
+.tabs_fade .tab_button {
+  position: absolute;
+}
+
+.tabs_fade .tab_button:hover {
+  cursor: pointer;
+}
+
+.tabs_fade .tab_button.first {
+  left: 25%;
+}
+
+.tabs_fade .tab_button.second {
+  left: 50%;
+}
+
+.tabs_fade .tab_button.third {
+  left: 75%;
+}
+
+.tabs_fade .tab_cursor {
+  position: absolute;
+  margin-top: 23px;
+  margin-left: -10px;
+  left: 25%;
+}
+
+.tabs_fade .tabs_fade_footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+}
+
+.separator {
+  clear: both;
+}
