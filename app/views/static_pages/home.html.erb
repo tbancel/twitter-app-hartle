@@ -1,36 +1,35 @@
 <% if signed_in?%>
-<div class="row">
-	<aside class="span4">
-		<section>
-			<%= render 'shared/user_info'%>
-		</section>
-		<section>
-			<%= render 'shared/stats'%>
-		</section>
-		<section>
-			<%= render 'shared/micropost_form'%>
-		</section>
-	</aside>
-	<div class="span8">
-		<h3>Micropost Feed</h3>
-		<%= render 'shared/feed'%>
-	</div>
-</div>	
+	<div class="row">
+		<aside class="span4">
+			<section>
+				<%= render 'shared/user_info'%>
+			</section>
+			<section>
+				<%= render 'shared/stats'%>
+			</section>
+			<section>
+				<%= render 'shared/micropost_form'%>
+			</section>
+		</aside>
+		<div class="span8">
+			<h3>Micropost Feed</h3>
+			<%= render 'shared/feed'%>
+		</div>
+	</div>	
 
 <% else%>
-<div class="center hero-unit">
-	<h1>Welcome to the Sample App</h1>
+	<div class="center hero-unit">
+		<h1>Welcome to the Sample App</h1>
 
-	<h2>
-		This is the home page for the
-		<a href="http://www.youtube.com/watch?v=-aBJxYxo1HU">Surf lessons app</a>.
-	</h2>
+		<h2>
+			This is the home page for the Twitter APP - Check it out
+		</h2>	
+		
+		<p>In this app, you can create an account, login/logout, tweet things, follow other users</p>
 
-	<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
-</div>
-<div class="center">
-<%= link_to image_tag("kelly_slater.jpg", alt: "Kelly Slater"), 
-'http://en.wikipedia.org/wiki/Kelly_Slater' %>
-</div>
+	<hr>
+
+		<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+	</div>
 
 <% end %>
